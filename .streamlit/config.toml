@@ -1,0 +1,8 @@
+# Community Cloud gives the app ~1 GB of RAM. Streamlit's 200 MB upload default
+# lets someone hand it a file that OOMs the whole app mid-demo. 25 MB is far more
+# than any programme spreadsheet and leaves room for pandas to work.
+[server]
+maxUploadSize = 25
+
+[theme]
+base = "dark"
